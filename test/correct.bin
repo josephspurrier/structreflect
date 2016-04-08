@@ -1,0 +1,32 @@
+type Foo struct {
+	A                  string
+	B                  *string
+	c                  string
+	d                  *string
+	E                  int
+	f                  *int
+	G                  uint `structs:"y"`
+	H                  uint `json:"h"`
+	I                  bool
+	j                  bool `xml:"j"`
+	K                  structreflect.Bar
+	L                  *structreflect.Bar
+	structreflect.Buzz `cool`
+	*structreflect.Bar `beans`
+	Fizz               struct {
+		Legs int `json:"legs"`
+		*ball.Ball
+		bb *ball.Ball
+	}
+	ball.Ball
+	M []string
+	n *[]string
+	O map[string]interface{}
+	p *map[string]interface{}
+	q interface{}
+	r *interface{}
+	s []interface{}
+	t *[]interface{}
+	u time.Time
+	v *time.Time
+}
